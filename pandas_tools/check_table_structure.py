@@ -5,7 +5,7 @@ from _collections_abc import dict_keys
 
 import pandas
 
-from .validate_column import validate_column
+from validate_column import validate_column
 
 
 def check_table_structure(actual_dataframe, expected_structure):
