@@ -6,6 +6,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 
+[tool.setuptools]
+py-modules = []
+
 [tool.setuptools.packages.find]
-where = ["pandas_tools"]  # list of folders that contain the packages (["."] by default)
+where = ["./pandas_tools"]  # list of folders that contain the packages (["."] by default)
+include = ["*.py"]
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
